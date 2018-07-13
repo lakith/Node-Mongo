@@ -19,9 +19,10 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',{ useNewUrlParser: true 
         // })
 
         db.collection('Users').insertOne({
-            name:'Senila Muthugala',
+            name:'Hansi Yapa',
             age:22,
-            location:'Horana'
+            location:'Horana',
+            enable:false
         },(err,result)=>{
             if(err){
                 return console.log('Collection insertion failed');

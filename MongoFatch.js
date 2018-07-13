@@ -13,7 +13,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',{ useNewUrlParser: true 
             console.log('unable to fatch TodoApp');
         });
 
-        db.collection('Users').find({name:'Hansi Yapa'}).toArray().then((docs)=>{
+        db.collection('Users').find().toArray().then((docs)=>{
             console.log('Connection Fatching Successfull');
             console.log(JSON.stringify(docs,undefined,2));
         },(err)=>{
